@@ -10,4 +10,14 @@ class DayWithMealsModel {
     required this.day,
     required this.meals,
   });
+
+  DayWithMealsModel copyWith({
+    DateTime? day,
+    List<MealModel>? meals,
+  }) {
+    return DayWithMealsModel(
+      day: day ?? this.day,
+      meals: meals ?? this.meals,
+    );
+  }
 }
