@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter/services.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 import 'app_colors.dart';
@@ -83,7 +84,7 @@ class AppTheme {
         backgroundColor: Colors.white,
         elevation: 0,
         titleTextStyle: theme.textTheme.headline4,
-        brightness: Brightness.dark,
+        brightness: Brightness.light,
       ),
       buttonColor: accent1,
       highlightColor: accent1!.shift(.1),
@@ -93,4 +94,3 @@ class AppTheme {
     return theme;
   }
 }
-
