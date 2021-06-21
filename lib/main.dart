@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'package:meal_planner/application/providers/meals_provider.dart';
 import 'package:provider/provider.dart';
 import 'application/dependency_injection/setup_dependency_injection.dart';
 import 'application/providers/_providers.dart';
