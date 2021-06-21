@@ -1,6 +1,5 @@
 import 'package:meal_planner/data/models/day_with_meals_model.dart';
 import 'package:meal_planner/data/models/meal_model.dart';
-import 'package:meal_planner/presentation/features/home_page/widgets/day_with_meals_widget.dart';
 
 import 'data_source.dart';
 
@@ -21,7 +20,7 @@ class StaticDataSource extends DataSource {
   }
 
   @override
-  List<DayWithMealsModel> getAllScheduledMeals() {
+  List<DayWithMealsModel> getAllScheduledDailyMeals() {
     final meals = getAllMeals();
     return [
       DayWithMealsModel(

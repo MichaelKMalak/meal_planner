@@ -3,5 +3,5 @@ import 'package:meal_planner/data/models/meal_model.dart';
 
 abstract class DataSource {
   List<MealModel> getAllMeals();
-  List<DayWithMealsModel> getAllScheduledMeals();
+  List<DayWithMealsModel> getAllScheduledDailyMeals();
 }

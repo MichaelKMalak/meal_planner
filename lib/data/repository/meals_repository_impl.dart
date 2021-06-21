@@ -17,7 +17,7 @@ class MealsRepositoryImpl extends MealsRepository {
   }
 
   @override
-  List<DayWithMealsModel> getAllScheduledMeals() {
-    return dataSource.getAllScheduledMeals();
+  List<DayWithMealsModel> getAllScheduledDailyMeals() {
+    return dataSource.getAllScheduledDailyMeals();
   }
 }
