@@ -1,3 +1,5 @@
+import 'package:flutter/services.dart';
+
 import 'widgets/day_tab_view.dart';
 import '../../core_flutter_packages.dart';
 import 'widgets/week_tab_view.dart';
@@ -19,9 +21,17 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      body: pages[currentTab],
-      bottomNavigationBar: buildBottomNavigationBar(context),
+    return AnnotatedRegion<SystemUiOverlayStyle>(
+      value: const SystemUiOverlayStyle(
+        statusBarIconBrightness: Brightness.dark,
+        statusBarBrightness: Brightness.light,
+      ),
+      child: Scaffold(
+        body: SafeArea(
+          child: pages[currentTab],
+        ),
+        bottomNavigationBar: buildBottomNavigationBar(context),
+      ),
     );
   }
 
@@ -36,13 +46,15 @@ class _HomePageState extends State<HomePage> {
                 currentTab = index;
               });
             },
+            selectedFontSize: 15,
+            unselectedFontSize: 15,
             items: <BottomNavigationBarItem>[
               BottomNavigationBarItem(
-                icon: const Icon(Icons.add),
+                icon: const SizedBox.shrink(),
                 label: locals.day,
               ),
               BottomNavigationBarItem(
-                icon: const Icon(Icons.add),
+                icon: const SizedBox.shrink(),
                 label: locals.week,
               ),
             ],
