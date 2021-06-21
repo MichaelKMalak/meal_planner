@@ -1,5 +1,9 @@
 {
   "day": "Day",
   "week": "Week",
-  "week2": "Week2"
+  "add": "Add",
+  "addMeal": "Add meal",
+  "youHaveAddedAllTheMealsForTheSelectedDay": "You have added all the meals for the selected day!",
+  "changeDate": "Change date",
+  "youDidntAddAnyMealsYet": "You didn't add any meals yet"
 }
