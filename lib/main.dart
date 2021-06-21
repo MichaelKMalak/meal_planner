@@ -1,8 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_localizations/flutter_localizations.dart';
-import 'presentation/_styles/theme.dart';
-import 'presentation/home_page.dart';
+import 'presentation/styles/app_theme.dart';
 import 'package:flutter_gen/gen_l10n/app_localizations.dart';
+
+import 'presentation/features/home_page/home_page.dart';
 
 void main() {
   runApp(MyApp());

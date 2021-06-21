@@ -94,11 +94,3 @@ class AppTheme {
   }
 }
 
-extension on Color {
-  Color shift(double amt) {
-    final amtNew = amt;
-    final hslc = HSLColor.fromColor(this);
-    final lightness = (hslc.lightness + amtNew).clamp(0, 1) as double;
-    return hslc.withLightness(lightness).toColor();
-  }
-}

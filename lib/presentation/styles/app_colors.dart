@@ -41,3 +41,12 @@ class AppColors {
   static const Color black = Colors.black54;
   static const Color white = Colors.white;
 }
+
+extension AppColorsExtenstion on Color {
+  Color shift(double amt) {
+    final amtNew = amt;
+    final hslc = HSLColor.fromColor(this);
+    final lightness = (hslc.lightness + amtNew).clamp(0, 1) as double;
+    return hslc.withLightness(lightness).toColor();
+  }
+}
