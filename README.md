@@ -1,16 +1,36 @@
-# meal_planner
+# Meal Planner
+A simple daily and weekly meal planning toy app.
 
-Meal Planner
+<img src="https://raw.githubusercontent.com/MichaelKMalak/meal_planner/assets/snapshot.gif" height=70% width=70%/>
 
-## Getting Started
+## Features
+The app has three separate screens:
+1- "Day" screen which shows only the meals for a single day
+2- "Week" screen which shows all the meals for an entire week
+3- "Meals list" which allows you to pick a meal and add to a day or week
 
-This project is a starting point for a Flutter application.
+## Folder Structure
+```bash
+.
+├── application
+│   ├── dependency_injection
+│   └── providers
+├── presentation
+│   ├── features
+│   ├── shared_widgets
+│   ├── styles
+│   └── routes
+├── utils
+└── data
+    ├── data_source
+    ├── models
+    └── repository
+```
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://flutter.dev/docs/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://flutter.dev/docs/cookbook)
-
-For help getting started with Flutter, view our
-[online documentation](https://flutter.dev/docs), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## Building ##
+  - Run `flutter channel stable` to make sure you're on the Flutter's stable channel 
+  - Run `flutter upgrade` to pull latest Flutter updates from the stable branch
+  - Run `flutter packages get` first to download the dependencies.
+  - Run `flutter run` to try it live on running emulator or usb connected device.
+  - Run `flutter build apk` to generate APK file.
+  - Run `flutter build ios` to package iOS app.
