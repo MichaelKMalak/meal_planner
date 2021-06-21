@@ -1,13 +1,13 @@
 # Meal Planner
 A simple daily and weekly meal planning toy app.
 
-<img src="https://raw.githubusercontent.com/MichaelKMalak/meal_planner/assets/snapshot.gif" height=70% width=70%/>
+<img src="https://github.com/MichaelKMalak/meal_planner/blob/main/assets/snapshot.gif?raw=true" height=20% width=20%/>
 
 ## Features
 The app has three separate screens:
-1- "Day" screen which shows only the meals for a single day
-2- "Week" screen which shows all the meals for an entire week
-3- "Meals list" which allows you to pick a meal and add to a day or week
+ 1. "Day" screen which shows only the meals for a single day
+ 2. "Week" screen which shows all the meals for an entire week
+ 3. "Meals list" which allows you to pick a meal and add to a day or week
 
 ## Folder Structure
 ```bash
