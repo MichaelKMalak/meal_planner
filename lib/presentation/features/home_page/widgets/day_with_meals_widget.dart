@@ -1,5 +1,6 @@
 import 'package:meal_planner/data/models/day_with_meals_model.dart';
 import 'package:meal_planner/data/models/meal_model.dart';
+import 'package:meal_planner/presentation/routes/route_paths.dart';
 
 import '../../../core_flutter_packages.dart';
 
@@ -22,7 +23,16 @@ class DayWithMealsWidget extends StatelessWidget {
                 day.toIso8601String(),
               ),
             ),
-            Text('btn'),
+            ElevatedButton(
+              onPressed: () {
+                Navigator.pushNamed(
+                  context,
+                  RoutePaths.mealsPage,
+                  arguments: day,
+                );
+              },
+              child: Text('btn'),
+            ),
           ],
         ),
         ...meals.map((meal) => Text(meal.title)).toList(),
